@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin - BragaWork</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Login Form -->
+    <div id="login-container" class="login-container">
+        <div class="login-form">
+            <div class="login-header">
+                <img src="/assets/logo-braga-work.jpg" alt="BragaWork Logo">
+                <h2>Painel Administrativo</h2>
+            </div>
+            
+            <form id="login-form">
+                <div class="form-group">
+                    <label for="username">Usuário</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="password">Senha</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-sign-in-alt"></i>
+                    <span>Entrar</span>
+                    <div class="loading-spinner"></div>
+                </button>
+            </form>
+            
+            <div id="login-error" class="error-message" style="display: none;"></div>
+        </div>
+    </div>
+
+    <!-- Admin Dashboard -->
+    <div id="admin-dashboard" class="admin-dashboard" style="display: none;">
+        <!-- Header -->
+        <header class="admin-header">
+            <div class="header-content">
+                <div class="header-left">
+                    <img src="/assets/logo-braga-work.jpg" alt="BragaWork Logo">
+                    <h1>Painel Administrativo</h1>
+                </div>
+                <div class="header-right">
+                    <span class="admin-user">Admin</span>
+                    <button class="btn-logout" onclick="logout()">
+                        <i class="fas fa-sign-out-alt"></i>
+                        Sair
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Tabs -->
+        <nav class="admin-nav">
+            <button class="nav-tab active" data-tab="quotes">
+                <i class="fas fa-envelope"></i>
+                Solicitações de Orçamento
+                <span class="notification-badge" id="quotes-badge">0</span>
+            </button>
+            <button class="nav-tab" data-tab="projects">
+                <i class="fas fa-folder"></i>
+                Gerenciar Projetos
+            </button>
+        </nav>
+
+        <!-- Quotes Tab -->
+        <div id="quotes-tab" class="tab-content active">
+            <!-- Content will be loaded dynamically -->
+        </div>
+
+        <!-- Projects Tab -->
+        <div id="projects-tab" class="tab-content">
+            <!-- Content will be loaded dynamically -->
+        </div>
+    </div>
+
+    <!-- Modals (same as before) -->
+    <div id="quote-modal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h3>Detalhes da Solicitação</h3>
+                <button class="modal-close" onclick="closeQuoteModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body" id="quote-details">
+                <!-- Quote details will be loaded here -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeQuoteModal()">Fechar</button>
+                <button class="btn btn-primary" onclick="updateQuoteStatus()">Atualizar Status</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div id="project-modal" class="modal">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h3 id="project-modal-title">Adicionar Projeto</h3>
+                <button class="modal-close" onclick="closeProjectModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="project-form">
+                    <div class="form-group">
+                        <label for="project-title">Título do Projeto *</label>
+                        <input type="text" id="project-title" name="title" required placeholder="Digite o título do projeto">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-description">Descrição</label>
+                        <textarea id="project-description" name="description" rows="4" placeholder="Digite a descrição do projeto (opcional)"></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="project-image">Imagem do Projeto</label>
+                        <div class="image-upload-container">
+                            <input type="file" id="project-image" accept="image/*" style="display: none;">
+                            <div class="image-preview" id="image-preview">
+                                <i class="fas fa-image"></i>
+                                <p>Clique ou arraste uma imagem aqui</p>
+                                <small>JPG, PNG, WEBP ou GIF (máx. 5MB)</small>
+                            </div>
+                            <button type="button" class="btn btn-secondary" onclick="document.getElementById('project-image').click()">
+                                <i class="fas fa-upload"></i> Escolher Imagem
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label>
+                            <input type="checkbox" id="project-active" name="isActive" checked>
+                            Exibir no carrossel
+                        </label>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary" onclick="closeProjectModal()">Cancelar</button>
+                <button class="btn btn-primary" onclick="submitProjectForm()">
+                    <i class="fas fa-save"></i> Salvar Projeto
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/database-new.js"></script>
+    <script src="js/admin.js"></script>
+</body>
+</html>
