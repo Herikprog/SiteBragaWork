@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BragaWork - Desenvolvimento de Sites para Negócios</title>
+    <meta name="description" content="A BragaWork desenvolve sites modernos e funcionais para impulsionar seu negócio. Solicite um orçamento gratuito e veja nossos projetos realizados.">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="BragaWork - Desenvolvimento de Sites para Negócios">
+    <meta property="og:description" content="Desenvolvemos sites modernos e funcionais para impulsionar seu negócio">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="assets/logo-braga-work.jpg">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen" style="display: none;">
+        <div class="loading-animation">
+            <div class="code-brackets">
+                <span>&lt;/&gt;</span>
+            </div>
+            <div class="loading-text">Carregando...</div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="assets/logo-braga-work.jpg" alt="BragaWork Logo">
+                <span>BragaWork</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Início</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#quote" class="nav-link">Orçamento</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <div class="floating-code">
+                <div class="code-snippet" style="--delay: 0s">console.log('Hello World');</div>
+                <div class="code-snippet" style="--delay: 2s">function createWebsite() {</div>
+                <div class="code-snippet" style="--delay: 4s">  return 'Amazing Site';</div>
+                <div class="code-snippet" style="--delay: 6s">}</div>
+                <div class="code-snippet" style="--delay: 8s">&lt;div class="success"&gt;</div>
+            </div>
+        </div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="typewriter">Desenvolvemos Sites</span>
+                <br>
+                <span class="highlight">Para Seu Negócio</span>
+            </h1>
+            <p class="hero-subtitle">
+                Transformamos suas ideias em soluções digitais modernas e funcionais
+                que impulsionam o crescimento do seu negócio.
+            </p>
+            <div class="hero-buttons">
+                <a href="#quote" class="btn btn-primary">
+                    <i class="fas fa-rocket"></i>
+                    Solicitar Orçamento
+                </a>
+                <a href="#projects" class="btn btn-secondary">
+                    <i class="fas fa-eye"></i>
+                    Ver Projetos
+                </a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">O Que Fazemos</h2>
+                <p class="section-subtitle">Especializados em criar experiências digitais únicas</p>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>BragaWork - Seu Parceiro Digital</h3>
+                    <p>
+                        Na BragaWork, desenvolvemos sites modernos e funcionais que não apenas impressionam 
+                        visualmente, mas também convertem visitantes em clientes. Nossa expertise combina 
+                        design inovador com tecnologia de ponta para criar soluções que fazem a diferença 
+                        no seu negócio.
+                    </p>
+                    
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Design Responsivo</h4>
+                                <p>Sites que funcionam perfeitamente em todos os dispositivos</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>Performance Otimizada</h4>
+                                <p>Carregamento rápido para melhor experiência do usuário</p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <div class="feature-icon">
+                                <i class="fas fa-search"></i>
+                            </div>
+                            <div class="feature-content">
+                                <h4>SEO Otimizado</h4>
+                                <p>Melhor posicionamento nos resultados de busca</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-visual">
+                    <div class="tech-stack">
+                        <div class="tech-item" style="--delay: 0.1s">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="tech-item" style="--delay: 0.2s">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="tech-item" style="--delay: 0.3s">
+                            <i class="fab fa-js-square"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="tech-item" style="--delay: 0.4s">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item" style="--delay: 0.5s">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item" style="--delay: 0.6s">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Carousel Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Nossos Projetos</h2>
+                <p class="section-subtitle">Conheça alguns dos sites que desenvolvemos</p>
+            </div>
+            
+            <div class="carousel-container">
+                <div class="carousel" id="projects-carousel">
+                    <!-- Projects will be loaded dynamically -->
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev-btn" id="prev-btn">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="carousel-btn next-btn" id="next-btn">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+                
+                <div class="carousel-indicators" id="carousel-indicators">
+                    <!-- Indicators will be generated dynamically -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form Section -->
+    <section id="quote" class="quote-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Solicite Seu Orçamento</h2>
+                <p class="section-subtitle">Conte-nos sobre seu projeto e receba uma proposta personalizada</p>
+            </div>
+            
+            <div class="quote-form-container">
+                <form id="quote-form" class="quote-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">Nome *</label>
+                            <input type="text" id="firstName" name="firstName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Sobrenome *</label>
+                            <input type="text" id="lastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group phone-group">
+                            <label for="phone">Telefone *</label>
+                            <div class="phone-input">
+                                <select id="countryCode" name="countryCode" required>
+                                    <option value="+93">🇦🇫 Afeganistão (+93)</option>
+                                    <option value="+27">🇿🇦 África do Sul (+27)</option>
+                                    <option value="+355">🇦🇱 Albânia (+355)</option>
+                                    <option value="+49">🇩🇪 Alemanha (+49)</option>
+                                    <option value="+376">🇦🇩 Andorra (+376)</option>
+                                    <option value="+244">🇦🇴 Angola (+244)</option>
+                                    <option value="+966">🇸🇦 Arábia Saudita (+966)</option>
+                                    <option value="+213">🇩🇿 Argélia (+213)</option>
+                                    <option value="+54">🇦🇷 Argentina (+54)</option>
+                                    <option value="+374">🇦🇲 Armênia (+374)</option>
+                                    <option value="+61">🇦🇺 Austrália (+61)</option>
+                                    <option value="+43">🇦🇹 Áustria (+43)</option>
+                                    <option value="+994">🇦🇿 Azerbaijão (+994)</option>
+                                    <option value="+973">🇧🇭 Bahrein (+973)</option>
+                                    <option value="+880">🇧🇩 Bangladesh (+880)</option>
+                                    <option value="+32">🇧🇪 Bélgica (+32)</option>
+                                    <option value="+501">🇧🇿 Belize (+501)</option>
+                                    <option value="+229">🇧🇯 Benin (+229)</option>
+                                    <option value="+591">🇧🇴 Bolívia (+591)</option>
+                                    <option value="+387">🇧🇦 Bósnia (+387)</option>
+                                    <option value="+267">🇧🇼 Botsuana (+267)</option>
+                                    <option value="+55" selected>🇧🇷 Brasil (+55)</option>
+                                    <option value="+673">🇧🇳 Brunei (+673)</option>
+                                    <option value="+359">🇧🇬 Bulgária (+359)</option>
+                                    <option value="+226">🇧🇫 Burkina Faso (+226)</option>
+                                    <option value="+257">🇧🇮 Burundi (+257)</option>
+                                    <option value="+975">🇧🇹 Butão (+975)</option>
+                                    <option value="+238">🇨🇻 Cabo Verde (+238)</option>
+                                    <option value="+237">🇨🇲 Camarões (+237)</option>
+                                    <option value="+855">🇰🇭 Camboja (+855)</option>
+                                    <option value="+1">🇨🇦 Canadá (+1)</option>
+                                    <option value="+974">🇶🇦 Catar (+974)</option>
+                                    <option value="+7">🇰🇿 Cazaquistão (+7)</option>
+                                    <option value="+235">🇹🇩 Chade (+235)</option>
+                                    <option value="+56">🇨🇱 Chile (+56)</option>
+                                    <option value="+86">🇨🇳 China (+86)</option>
+                                    <option value="+357">🇨🇾 Chipre (+357)</option>
+                                    <option value="+57">🇨🇴 Colômbia (+57)</option>
+                                    <option value="+269">🇰🇲 Comores (+269)</option>
+                                    <option value="+242">🇨🇬 Congo (+242)</option>
+                                    <option value="+850">🇰🇵 Coreia do Norte (+850)</option>
+                                    <option value="+82">🇰🇷 Coreia do Sul (+82)</option>
+                                    <option value="+225">🇨🇮 Costa do Marfim (+225)</option>
+                                    <option value="+506">🇨🇷 Costa Rica (+506)</option>
+                                    <option value="+385">🇭🇷 Croácia (+385)</option>
+                                    <option value="+53">🇨🇺 Cuba (+53)</option>
+                                    <option value="+45">🇩🇰 Dinamarca (+45)</option>
+                                    <option value="+253">🇩🇯 Djibuti (+253)</option>
+                                    <option value="+1">🇩🇲 Dominica (+1)</option>
+                                    <option value="+20">🇪🇬 Egito (+20)</option>
+                                    <option value="+503">🇸🇻 El Salvador (+503)</option>
+                                    <option value="+971">🇦🇪 Emirados Árabes (+971)</option>
+                                    <option value="+593">🇪🇨 Equador (+593)</option>
+                                    <option value="+291">🇪🇷 Eritreia (+291)</option>
+                                    <option value="+421">🇸🇰 Eslováquia (+421)</option>
+                                    <option value="+386">🇸🇮 Eslovênia (+386)</option>
+                                    <option value="+34">🇪🇸 Espanha (+34)</option>
+                                    <option value="+1">🇺🇸 Estados Unidos (+1)</option>
+                                    <option value="+372">🇪🇪 Estônia (+372)</option>
+                                    <option value="+251">🇪🇹 Etiópia (+251)</option>
+                                    <option value="+679">🇫🇯 Fiji (+679)</option>
+                                    <option value="+63">🇵🇭 Filipinas (+63)</option>
+                                    <option value="+358">🇫🇮 Finlândia (+358)</option>
+                                    <option value="+33">🇫🇷 França (+33)</option>
+                                    <option value="+241">🇬🇦 Gabão (+241)</option>
+                                    <option value="+220">🇬🇲 Gâmbia (+220)</option>
+                                    <option value="+233">🇬🇭 Gana (+233)</option>
+                                    <option value="+995">🇬🇪 Geórgia (+995)</option>
+                                    <option value="+350">🇬🇮 Gibraltar (+350)</option>
+                                    <option value="+30">🇬🇷 Grécia (+30)</option>
+                                    <option value="+1">🇬🇩 Granada (+1)</option>
+                                    <option value="+502">🇬🇹 Guatemala (+502)</option>
+                                    <option value="+592">🇬🇾 Guiana (+592)</option>
+                                    <option value="+594">🇬🇫 Guiana Francesa (+594)</option>
+                                    <option value="+224">🇬🇳 Guiné (+224)</option>
+                                    <option value="+240">🇬🇶 Guiné Equatorial (+240)</option>
+                                    <option value="+245">🇬🇼 Guiné-Bissau (+245)</option>
+                                    <option value="+509">🇭🇹 Haiti (+509)</option>
+                                    <option value="+504">🇭🇳 Honduras (+504)</option>
+                                    <option value="+852">🇭🇰 Hong Kong (+852)</option>
+                                    <option value="+36">🇭🇺 Hungria (+36)</option>
+                                    <option value="+967">🇾🇪 Iêmen (+967)</option>
+                                    <option value="+91">🇮🇳 Índia (+91)</option>
+                                    <option value="+62">🇮🇩 Indonésia (+62)</option>
+                                    <option value="+98">🇮🇷 Irã (+98)</option>
+                                    <option value="+964">🇮🇶 Iraque (+964)</option>
+                                    <option value="+353">🇮🇪 Irlanda (+353)</option>
+                                    <option value="+354">🇮🇸 Islândia (+354)</option>
+                                    <option value="+972">🇮🇱 Israel (+972)</option>
+                                    <option value="+39">🇮🇹 Itália (+39)</option>
+                                    <option value="+1">🇯🇲 Jamaica (+1)</option>
+                                    <option value="+81">🇯🇵 Japão (+81)</option>
+                                    <option value="+962">🇯🇴 Jordânia (+962)</option>
+                                    <option value="+965">🇰🇼 Kuwait (+965)</option>
+                                    <option value="+856">🇱🇦 Laos (+856)</option>
+                                    <option value="+371">🇱🇻 Letônia (+371)</option>
+                                    <option value="+961">🇱🇧 Líbano (+961)</option>
+                                    <option value="+231">🇱🇷 Libéria (+231)</option>
+                                    <option value="+218">🇱🇾 Líbia (+218)</option>
+                                    <option value="+423">🇱🇮 Liechtenstein (+423)</option>
+                                    <option value="+370">🇱🇹 Lituânia (+370)</option>
+                                    <option value="+352">🇱🇺 Luxemburgo (+352)</option>
+                                    <option value="+853">🇲🇴 Macau (+853)</option>
+                                    <option value="+389">🇲🇰 Macedônia (+389)</option>
+                                    <option value="+261">🇲🇬 Madagascar (+261)</option>
+                                    <option value="+60">🇲🇾 Malásia (+60)</option>
+                                    <option value="+265">🇲🇼 Malawi (+265)</option>
+                                    <option value="+960">🇲🇻 Maldivas (+960)</option>
+                                    <option value="+223">🇲🇱 Mali (+223)</option>
+                                    <option value="+356">🇲🇹 Malta (+356)</option>
+                                    <option value="+212">🇲🇦 Marrocos (+212)</option>
+                                    <option value="+230">🇲🇺 Maurício (+230)</option>
+                                    <option value="+222">🇲🇷 Mauritânia (+222)</option>
+                                    <option value="+52">🇲🇽 México (+52)</option>
+                                    <option value="+95">🇲🇲 Mianmar (+95)</option>
+                                    <option value="+258">🇲🇿 Moçambique (+258)</option>
+                                    <option value="+373">🇲🇩 Moldávia (+373)</option>
+                                    <option value="+377">🇲🇨 Mônaco (+377)</option>
+                                    <option value="+976">🇲🇳 Mongólia (+976)</option>
+                                    <option value="+382">🇲🇪 Montenegro (+382)</option>
+                                    <option value="+264">🇳🇦 Namíbia (+264)</option>
+                                    <option value="+674">🇳🇷 Nauru (+674)</option>
+                                    <option value="+977">🇳🇵 Nepal (+977)</option>
+                                    <option value="+505">🇳🇮 Nicarágua (+505)</option>
+                                    <option value="+227">🇳🇪 Níger (+227)</option>
+                                    <option value="+234">🇳🇬 Nigéria (+234)</option>
+                                    <option value="+47">🇳🇴 Noruega (+47)</option>
+                                    <option value="+64">🇳🇿 Nova Zelândia (+64)</option>
+                                    <option value="+968">🇴🇲 Omã (+968)</option>
+                                    <option value="+31">🇳🇱 Países Baixos (+31)</option>
+                                    <option value="+92">🇵🇰 Paquistão (+92)</option>
+                                    <option value="+507">🇵🇦 Panamá (+507)</option>
+                                    <option value="+675">🇵🇬 Papua-Nova Guiné (+675)</option>
+                                    <option value="+595">🇵🇾 Paraguai (+595)</option>
+                                    <option value="+51">🇵🇪 Peru (+51)</option>
+                                    <option value="+48">🇵🇱 Polônia (+48)</option>
+                                    <option value="+351">🇵🇹 Portugal (+351)</option>
+                                    <option value="+254">🇰🇪 Quênia (+254)</option>
+                                    <option value="+996">🇰🇬 Quirguistão (+996)</option>
+                                    <option value="+44">🇬🇧 Reino Unido (+44)</option>
+                                    <option value="+236">🇨🇫 Rep. Centro-Africana (+236)</option>
+                                    <option value="+1">🇩🇴 República Dominicana (+1)</option>
+                                    <option value="+420">🇨🇿 República Tcheca (+420)</option>
+                                    <option value="+40">🇷🇴 Romênia (+40)</option>
+                                    <option value="+250">🇷🇼 Ruanda (+250)</option>
+                                    <option value="+7">🇷🇺 Rússia (+7)</option>
+                                    <option value="+685">🇼🇸 Samoa (+685)</option>
+                                    <option value="+378">🇸🇲 San Marino (+378)</option>
+                                    <option value="+239">🇸🇹 São Tomé e Príncipe (+239)</option>
+                                    <option value="+221">🇸🇳 Senegal (+221)</option>
+                                    <option value="+232">🇸🇱 Serra Leoa (+232)</option>
+                                    <option value="+381">🇷🇸 Sérvia (+381)</option>
+                                    <option value="+248">🇸🇨 Seychelles (+248)</option>
+                                    <option value="+65">🇸🇬 Singapura (+65)</option>
+                                    <option value="+963">🇸🇾 Síria (+963)</option>
+                                    <option value="+252">🇸🇴 Somália (+252)</option>
+                                    <option value="+94">🇱🇰 Sri Lanka (+94)</option>
+                                    <option value="+268">🇸🇿 Suazilândia (+268)</option>
+                                    <option value="+249">🇸🇩 Sudão (+249)</option>
+                                    <option value="+211">🇸🇸 Sudão do Sul (+211)</option>
+                                    <option value="+46">🇸🇪 Suécia (+46)</option>
+                                    <option value="+41">🇨🇭 Suíça (+41)</option>
+                                    <option value="+597">🇸🇷 Suriname (+597)</option>
+                                    <option value="+66">🇹🇭 Tailândia (+66)</option>
+                                    <option value="+886">🇹🇼 Taiwan (+886)</option>
+                                    <option value="+992">🇹🇯 Tajiquistão (+992)</option>
+                                    <option value="+255">🇹🇿 Tanzânia (+255)</option>
+                                    <option value="+670">🇹🇱 Timor-Leste (+670)</option>
+                                    <option value="+228">🇹🇬 Togo (+228)</option>
+                                    <option value="+676">🇹🇴 Tonga (+676)</option>
+                                    <option value="+1">🇹🇹 Trinidad e Tobago (+1)</option>
+                                    <option value="+216">🇹🇳 Tunísia (+216)</option>
+                                    <option value="+993">🇹🇲 Turcomenistão (+993)</option>
+                                    <option value="+90">🇹🇷 Turquia (+90)</option>
+                                    <option value="+688">🇹🇻 Tuvalu (+688)</option>
+                                    <option value="+380">🇺🇦 Ucrânia (+380)</option>
+                                    <option value="+256">🇺🇬 Uganda (+256)</option>
+                                    <option value="+598">🇺🇾 Uruguai (+598)</option>
+                                    <option value="+998">🇺🇿 Uzbequistão (+998)</option>
+                                    <option value="+678">🇻🇺 Vanuatu (+678)</option>
+                                    <option value="+379">🇻🇦 Vaticano (+379)</option>
+                                    <option value="+58">🇻🇪 Venezuela (+58)</option>
+                                    <option value="+84">🇻🇳 Vietnã (+84)</option>
+                                    <option value="+260">🇿🇲 Zâmbia (+260)</option>
+                                    <option value="+263">🇿🇼 Zimbábue (+263)</option>
+                                </select>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="projectDescription">Descrição do Projeto *</label>
+                        <textarea id="projectDescription" name="projectDescription" rows="5" 
+                                  placeholder="Descreva seu projeto: tipo de site, funcionalidades desejadas, prazo, orçamento estimado, etc." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-paper-plane"></i>
+                        <span>Enviar Solicitação</span>
+                        <div class="loading-spinner"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <img src="assets/logo-braga-work.jpg" alt="BragaWork Logo">
+                        <span>BragaWork</span>
+                    </div>
+                    <p>Desenvolvendo o futuro digital do seu negócio com tecnologia e criatividade.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Serviços</h4>
+                    <ul>
+                        <li><a href="#about">Desenvolvimento Web</a></li>
+                        <li><a href="#projects">Design Responsivo</a></li>
+                        <li><a href="#quote">Consultoria Digital</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contato</h4>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> bragawork01@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +351 927 512 038</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 BragaWork. Todos os direitos reservados.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="success-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <i class="fas fa-check-circle"></i>
+                <h3>Solicitação Enviada!</h3>
+            </div>
+            <div class="modal-body">
+                <p>Obrigado pelo seu interesse! Recebemos sua solicitação de orçamento e entraremos em contato em breve.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" onclick="closeModal()">Entendi</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Admin Link (hidden) -->
+    <a href="/admin.html" class="admin-link" id="admin-link">Admin</a>
+
+    <script src="js/database-new.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/carousel.js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html>
